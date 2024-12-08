@@ -130,7 +130,6 @@ public class CompilerAPI {
     }
 
     private List<Object> parseList(String input, Class<?> componentType) {
-        // Убираем скобки и разделяем элементы
         String[] elements = input.replace("[", "").replace("]", "").split(",");
         List<Object> list = new ArrayList<>();
 
